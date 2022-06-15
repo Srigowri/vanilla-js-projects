@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;800&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    margin:0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.app-container{
+    width:400px;
+    min-height:650px;    
+    border:none;
+    box-shadow: 0 1px 2px 5px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;          
+    margin-top: 100px;
+    padding-top: 10px;
+}
+.nav-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left:10px;
+    padding-right: 10px;
+    
+}
+.hamburger{
+    width:30px;
+    height:30px;
+    border:none;
+}
+.search{
+    width:20px;
+    height:20px;
+
+}
+#search-button{
+    border:none;
+    margin-left:2px;
+}
+.search-bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+}
+.search-box {
+    border:none;
+    box-shadow: 0 0px 2px 2px rgba(0,0,0,0.2);
+    font-family: inherit;
+    border-radius: 5px;    
+    padding-right: 2px;
+}
+.recipe-stories-container{
+    background-color: pink;  
+    text-align: center;
+    font-weight: 800;
+    padding-top: 10px;
+}
+
+.recipe-stories{
+    display: flex;
+    flex-direction: row;
+      
+    padding-left:6px;
+    padding-right: 6px;    
+    font-size:10px;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: space-around;
+}
+.recipes{   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top:8px;    
+    position: relative;
+}
+ul{
+    list-style-type: none;
+}
+.recipes img{
+    width:50px;
+    height: 50px;
+    border-radius:25px;
+    border:solid;
+    border-width: 1px;
+    border-color: purple;
+    
+}
+.recipe-cards{
+    width:360px;
+    display: flex;
+    flex-direction: column;
+    margin-left:45px;
+}
+.recipe-header{    
+    width:300px;
+    height:200px;
+    /* margin-bottom:5px; */
+    margin-top:12px;
+    position: relative;
+}
+.recipe-body{
+    position: relative;
+    width:300px;
+    height:100px;
+    margin:0;
+}
+.like-button-img{
+    width:30px;
+    height:30px;        
+    padding:3px 0 0 0;   
+    
+}
+.like-button{
+    border:none;
+    position: relative;
+    bottom:2px;
+    right:2px;
+}
+.like-button:active{
+    background-color:red;
+}
+.recipe-tag{
+    padding:3px;
+    border:none;
+    color:black;
+    background-color: white;
+    position: absolute;
+    top:10px;    
+    opacity: 0.9;
+    border-radius: 2px;
+}
+.recipe-header img{
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.recipes{
+    position: relative;
+}
+.recipes .close-button{
+    position: absolute;    
+    top:3px;
+    right:30px;
+    border-radius: 25px;
+    border: none;
+    background-color: black;
+    color: white;
+    opacity:0;
+}
+.recipes:hover .close-button{
+    opacity: 1;
+}
+.recipes span{
+    display:inline-block;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+    overflow: hidden;
+    width:85px;
+}
